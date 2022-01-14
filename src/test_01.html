@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>WEB1 - ${title}</title>
+  <meta charset="utf-8">
+  <style>
+    @import './views/home.css';
+    #container{
+      background-color:powerblue;
+      display:flex;
+    }
+    #item{
+      background-color:tomato;
+      color:white;
+      width:200px;
+      border:1px solid white;
+    }
+    #grid {
+      border: 5px solid none;
+      display: grid;
+      grid-template-columns: 150px 4fr;
+    }
+
+    #color {
+      color: white
+    }
+
+    div {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+    <h1><a href="/">관리자</a></h1>
+  <div id="container">
+    <div id="item">
+      ${list}
+    </div>
+    <div id="item">
+      ${control}
+    </div>
+    <div id="item">
+      ${body}
+    </div>
+  </div>
+</body>
+
+</html>

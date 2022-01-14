@@ -1,0 +1,326 @@
+/*blur in*/
+
+
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+
+ .text-focus-in {
+    -webkit-animation: text-focus-in 1s ease-in forwards;
+    animation: text-focus-in 1s ease-in forwards;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation bg-pan-bl
+ * ----------------------------------------
+ */
+
+.bg-pan-bl {
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes bg-pan-bl {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+@keyframes bg-pan-bl {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation flicker-4
+ * ----------------------------------------
+ */
+
+.flicker-4 {
+    -webkit-animation: flicker-4 4s linear infinite both;
+    animation: flicker-4 4s linear infinite both;
+}
+
+
+@-webkit-keyframes flicker-4 {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    31.98% {
+        opacity: 1;
+    }
+    32% {
+        opacity: 0;
+    }
+    32.8% {
+        opacity: 0;
+    }
+    32.82% {
+        opacity: 1;
+    }
+    34.98% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    35.7% {
+        opacity: 0;
+    }
+    35.72% {
+        opacity: 1;
+    }
+    36.98% {
+        opacity: 1;
+    }
+    37% {
+        opacity: 0;
+    }
+    37.6% {
+        opacity: 0;
+    }
+    37.62% {
+        opacity: 1;
+    }
+    67.98% {
+        opacity: 1;
+    }
+    68% {
+        opacity: 0;
+    }
+    68.4% {
+        opacity: 0;
+    }
+    68.42% {
+        opacity: 1;
+    }
+    95.98% {
+        opacity: 1;
+    }
+    96% {
+        opacity: 0;
+    }
+    96.7% {
+        opacity: 0;
+    }
+    96.72% {
+        opacity: 1;
+    }
+    98.98% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    99.6% {
+        opacity: 0;
+    }
+    99.62% {
+        opacity: 1;
+    }
+}
+@keyframes flicker-4 {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    31.98% {
+        opacity: 1;
+    }
+    32% {
+        opacity: 0;
+    }
+    32.8% {
+        opacity: 0;
+    }
+    32.82% {
+        opacity: 1;
+    }
+    34.98% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    35.7% {
+        opacity: 0;
+    }
+    35.72% {
+        opacity: 1;
+    }
+    36.98% {
+        opacity: 1;
+    }
+    37% {
+        opacity: 0;
+    }
+    37.6% {
+        opacity: 0;
+    }
+    37.62% {
+        opacity: 1;
+    }
+    67.98% {
+        opacity: 1;
+    }
+    68% {
+        opacity: 0;
+    }
+    68.4% {
+        opacity: 0;
+    }
+    68.42% {
+        opacity: 1;
+    }
+    95.98% {
+        opacity: 1;
+    }
+    96% {
+        opacity: 0;
+    }
+    96.7% {
+        opacity: 0;
+    }
+    96.72% {
+        opacity: 1;
+    }
+    98.98% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    99.6% {
+        opacity: 0;
+    }
+    99.62% {
+        opacity: 1;
+    }
+}
+
+@keyframes textflicker {
+    from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}

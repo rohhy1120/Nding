@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dancearch</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <script type="text/javascript" src="script/loading.js"></script>
+    <style>
+        @import './loading.css';
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="header flicker-4" >
+            DANCEARCH
+        </div> <!--header-->
+        <div class="content">
+            <div id="loadIcon" class="loadIconWrap">
+                <div class="lds-facebook"><div></div><div></div><div></div></div>
+            </div>
+            <div id="loadingMent">
+                잠시만 기다려주세요,  안무를 검색중입니다!!
+            </div>
+            <form id="nextButton" style="display: none;" action="/process/toResult" method="post">
+                <button type="submit">next</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

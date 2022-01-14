@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dancearch</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0eabeffbc.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/home.js"></script>
+    <style lang="css">
+        @import "home.css";
+        @import "animation.css";
+    </style>
+</head>
+
+<body>
+<div class="home bg-pan-bl">
+    <div class="header flicker-4" >
+        DANCEARCH
+    </div>
+    <div class="content">
+        <div class="searchMent text-focus-in">
+            당신의 안무를 검색하세요!
+        </div>
+        <div class="fileUpload">
+           </div>
+            <div id="videoIcon">
+                <label for="file"><i class="far fa-file-video"></i></label>
+            </div>
+
+            <div id="fileCheck" style="display: none">
+                <video id="video" controls autoplay></video>
+                <div class="btnWrap">
+                    <button type="reset">RELOAD</button>
+                    <form
+                        method="post"
+                        enctype="multipart/form-data"
+                        action="/process/videoUpload">
+                        <input  type="file"
+                                id="file"
+                                name="video"
+                                accept="video/mp4"
+                                onchange="checkVideo(event)"/>
+                        <button type="submit" id="nextBtn" name="video">NEXT</button>
+                    </form>
+                </div>
+            </div> <!--display after uploading video-->
+        </div>
+</div>
+</body>
+</html>
